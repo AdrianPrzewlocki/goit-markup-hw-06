@@ -35,12 +35,12 @@ body {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-} 
+}
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-} 
+}
 
 ul {
     margin: 0;
@@ -65,7 +65,7 @@ ul {
     align-items: center;
     margin: 0 auto;
     height: 80px;
-    
+
 }
 
 .logo {
@@ -77,7 +77,7 @@ ul {
     margin-right: 93px;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 }
 
@@ -106,6 +106,7 @@ ul {
 .item__active {
     color: var(--color-hover);
 }
+
 .active__link::after {
     position: absolute;
     display: block;
@@ -124,7 +125,7 @@ ul {
     color: var(--color-hover);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} 
+}
 
 .navigation__item:active {
     color: var(--background-hover);
@@ -163,9 +164,8 @@ ul {
 /* main  - title */
 
 .main__title {
-    background-image: linear-gradient(
-        var(--background-title), 
-        var(--background-title)),
+    background-image: linear-gradient(var(--background-title),
+            var(--background-title)),
         url(../images/image_background.jpg);
     max-width: 1600px;
     margin: 0 auto;
@@ -188,7 +188,7 @@ ul {
 }
 
 .main__text {
-    
+
     text-align: center;
     text-transform: uppercase;
     color: var(--color-second);
@@ -209,7 +209,7 @@ ul {
 
 .main__button {
     color: var(--color-second);
-    font-family:'Roboto';
+    font-family: 'Roboto';
     font-style: normal;
     text-align: center;
     align-items: center;
@@ -246,8 +246,8 @@ ul {
     opacity: 1;
     background-color: var(--background-color);
     box-shadow: 0px 2px 1px 0px var(--color-backdrop),
-                0px 1px 1px 0px #00000024,
-                0px 1px 3px 0px #0000001F;
+        0px 1px 1px 0px #00000024,
+        0px 1px 3px 0px #0000001F;
 }
 
 .btn__close {
@@ -270,6 +270,7 @@ ul {
     background-color: var(--background-hover);
     fill: var(--color-second)
 }
+
 /* main - assets */
 
 .assets {
@@ -365,8 +366,8 @@ ul {
     font-size: 16px;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-                0px 1px 1px rgba(0, 0, 0, 0.14),
-                0px 2px 1px rgba(0, 0, 0, 0.2);
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -390,7 +391,7 @@ ul {
     justify-content: center;
     gap: 10px;
     margin-bottom: 30px;
-    
+
 }
 
 .social__box svg {
@@ -400,7 +401,7 @@ ul {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    
+
 }
 
 .links {
@@ -487,9 +488,9 @@ ul {
 .btn__item:focus {
     color: var(--color-second);
     background-color: var(--background-hover);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
-                0px 1px 2px rgba(0, 0, 0, 0.08), 
-                0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* photo box */
@@ -500,7 +501,7 @@ ul {
     padding: 50px 0 0 0;
     gap: 30px;
     grid-template-columns: auto auto auto;
-    
+
 }
 
 .project__photo {
@@ -520,14 +521,17 @@ ul {
 
 .main__portfolio:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-    0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
 
 .main__photo {
     display: block;
 }
+
+
+/* ------------------------Form------------------------------ */
 
 .overlay {
     position: absolute;
@@ -539,7 +543,7 @@ ul {
     justify-content: center;
     align-items: center;
     top: 0;
-    left:0;
+    left: 0;
     transition-property: transform;
     transition-duration: 0.5s;
     transition-timing-function: linear;
@@ -567,7 +571,7 @@ ul {
     border: 1px solid #EEEEEE;
 }
 
-.title__name, 
+.title__name,
 .title__site {
     margin: 0 auto;
 }
@@ -577,7 +581,7 @@ ul {
     line-height: 2;
     font-weight: 700;
     letter-spacing: 0.06em;
-    
+
 }
 
 .title__box .title__site {
@@ -605,7 +609,7 @@ ul {
 .logo__bottom {
     color: var(--color-second);
     padding-bottom: 20px;
-    }
+}
 
 
 .contact__list {
@@ -659,4 +663,52 @@ ul {
 .social__box--footer a:hover svg,
 .social__box--footer a:focus svg {
     background-color: var(--background-hover);
+}
+
+.news__email {
+    /* position: relative; */
+    padding-left: 78px;
+}
+
+.news__email label {
+    text-transform: uppercase;
+    color: var(--color-second);
+    line-height: 1.17;
+}
+
+form {
+    display: flex;
+    padding-top: 20px;
+}
+
+.email__box {
+    /* position: relative; */
+    width: 358px;
+    height: 50px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+    background-color: var(--background-dark);
+    border: 1px solid #FFFFFF4D;
+    border-radius: 4px;
+}
+
+.btn__email {
+    /* position: relative; */
+    width: 200px;
+    height: 50px;
+    background-color: var(--background-hover);
+    border-radius: 4px;
+    letter-spacing: 0.06rem;
+}
+
+.email__item {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    color: var(--color-second);
+}
+
+.btn__email svg {
+    position: absolute;
+    fill: var(--color-second);
+    right: 28px;
 }
